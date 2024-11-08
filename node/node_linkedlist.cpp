@@ -7,7 +7,6 @@ struct Node {
 
 Node *n = NULL, *head = NULL, *tail = NULL, *x = NULL;
 
-// Function to create the first node
 void buatNodeAwal(int i) {
     n = new Node;
     n->data = i;
@@ -16,8 +15,6 @@ void buatNodeAwal(int i) {
     tail->next = NULL;
     std::cout << "Nilai " << i << " berhasil dimasukkan di node awal.\n";
 }
-
-// Function to add a node at the end
 void tambahDiBelakang(int i) {
     n = new Node;
     n->data = i;
@@ -26,8 +23,6 @@ void tambahDiBelakang(int i) {
     tail->next = NULL;
     std::cout << "Nilai " << i << " berhasil ditambahkan di belakang.\n";
 }
-
-// Function to add a node at the front
 void tambahDiDepan(int i) {
     n = new Node;
     n->data = i;
@@ -35,8 +30,6 @@ void tambahDiDepan(int i) {
     head = n;
     std::cout << "Nilai " << i << " berhasil ditambahkan di depan.\n";
 }
-
-// Function to add a node in the middle after a specific node
 void tambahDiTengah(int i, int j) {
     x = head;
     while (x != NULL && x->data != j) {
@@ -52,8 +45,6 @@ void tambahDiTengah(int i, int j) {
     x->next = n;
     std::cout << "Nilai " << i << " berhasil ditambahkan setelah nilai " << j << ".\n";
 }
-
-// Function to delete the node at the front
 void hapusDiDepan() {
     if (head == NULL) {
         std::cout << "Linked list kosong.\n";
@@ -64,8 +55,6 @@ void hapusDiDepan() {
     delete x;
     std::cout << "Node di depan berhasil dihapus.\n";
 }
-
-// Function to delete the node at the end
 void hapusDiBelakang() {
     if (head == NULL) {
         std::cout << "Linked list kosong.\n";
@@ -85,8 +74,6 @@ void hapusDiBelakang() {
     }
     std::cout << "Node di belakang berhasil dihapus.\n";
 }
-
-// Function to delete a specific node in the middle
 void hapusDiTengah(int i) {
     Node *temp = NULL;
     x = head;
@@ -107,8 +94,6 @@ void hapusDiTengah(int i) {
     }
     std::cout << "Node dengan nilai " << i << " berhasil dihapus.\n";
 }
-
-// Function to display the data in the linked list
 void tampilData() {
     if (head == NULL) {
         std::cout << "Linked list kosong.\n";
@@ -122,11 +107,8 @@ void tampilData() {
     }
     std::cout << std::endl;
 }
-
-// Main function to display the menu and process user input
 int main() {
     int choice, data, afterData;
-
     do {
         std::cout << "\nMenu:\n";
         std::cout << "1. Buat Node Awal\n";
@@ -153,7 +135,7 @@ int main() {
                 } else {
                     std::cout << "Masukkan nilai: ";
                     std::cin >> data;
-                    std::cout << "Tambah di:\n1. Depan\n2. Belakang\n3. Setelah nilai tertentu\nPilihan: ";
+                    std::cout << "Pilihan di:\n1. Tambah Node di Depan \n2. Tambah Node di Belakang\n3. Tambah Node di Tengah\nPilihan: ";
                     int subChoice;
                     std::cin >> subChoice;
                     if (subChoice == 1) {
@@ -173,7 +155,7 @@ int main() {
                 if (head == NULL) {
                     std::cout << "Linked list kosong.\n";
                 } else {
-                    std::cout << "Hapus di:\n1. Depan\n2. Belakang\n3. Nilai tertentu\nPilihan: ";
+                    std::cout << "Hapus di:\n1. Depan\n2. Belakang\n3. Nilai \nPilihan: ";
                     int subChoice;
                     std::cin >> subChoice;
                     if (subChoice == 1) {
@@ -199,6 +181,5 @@ int main() {
                 std::cout << "Pilihan tidak valid!\n";
         }
     } while (choice != 5);
-
     return 0;
 }
