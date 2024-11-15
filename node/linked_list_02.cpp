@@ -113,12 +113,12 @@ int getValidIntegerInput() {
         cin >> input;
 
         if (cin.fail()) {
-            cin.clear(); // Clear the error flag
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Input tidak valid. Harap masukkan angka.\nMasukkan lagi: ";
         } else {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear any extra input in buffer
-            return input; // Valid input received, break the loop
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return input;
         }
     }
 }

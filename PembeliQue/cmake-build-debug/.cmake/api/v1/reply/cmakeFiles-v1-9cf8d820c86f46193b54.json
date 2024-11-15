@@ -782,8 +782,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/develop/Semester3/node/cmake-build-debug",
-		"source" : "D:/develop/Semester3/node"
+		"build" : "D:/develop/Semester3/PembeliQue/cmake-build-debug",
+		"source" : "D:/develop/Semester3/PembeliQue"
 	},
 	"version" : 
 	{

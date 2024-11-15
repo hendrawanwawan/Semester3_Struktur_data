@@ -1,3 +1,8 @@
 # ninja log v5
-0	457	7522039638529070	CMakeFiles/node.dir/node_linkedlist.cpp.obj	cad2de23f21691
-459	619	7522039640099064	node.exe	f3928dae60654c1b
+6	541	7527650708494488	CMakeFiles/node.dir/node_linkedlist.cpp.obj	cad2de23f21691
+662	819	7528303064713429	node.exe	5efdcad6b64f3a58
+0	662	7528303063188708	CMakeFiles/node.dir/Metode_Biseksi_KLMP_4.cpp.obj	4894e12900da489f
+14	542	7527650708514511	CMakeFiles/node.dir/double_linked_list_d.cpp.obj	c71edd9f76225806
+0	156	7531193307652074	build.ninja	d2121192e8f0797d
+3	403	7527693893319070	CMakeFiles/node.dir/linked_list_02.cpp.obj	633f6dfea52430b4
+0	543	7528171181777142	CMakeFiles/node.dir/binary_search_tree.cpp.obj	bb7bf29df4eb1707

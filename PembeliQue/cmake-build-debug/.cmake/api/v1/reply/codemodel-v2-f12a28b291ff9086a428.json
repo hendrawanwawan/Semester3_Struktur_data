@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "node",
+					"name" : "PembeliQue",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-node-Debug-0cec8d7b80b80fd7eff0.json",
-					"name" : "node",
+					"id" : "PembeliQue::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PembeliQue-Debug-f824e7234c12d489953b.json",
+					"name" : "PembeliQue",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/develop/Semester3/node/cmake-build-debug",
-		"source" : "D:/develop/Semester3/node"
+		"build" : "D:/develop/Semester3/PembeliQue/cmake-build-debug",
+		"source" : "D:/develop/Semester3/PembeliQue"
 	},
 	"version" : 
 	{
