@@ -91,6 +91,8 @@ bool search(Node *root, int data) {
 
 // Fungsi untuk mencari node dengan nilai minimum
 Node *findMin(Node *root) {
+    if (root == NULL)
+        return NULL;
     while (root->left != NULL)
         root = root->left;
     return root;
@@ -129,6 +131,16 @@ void deleteNode(Node *&root, int data) {
             deleteNode(root->right, temp->data);
         }
         cout << "Data " << data << " berhasil dihapus...\n";
+    }
+}
+
+void displaytree(Node *root) {
+    cout << "\nTree (inorder Ascending) : ";
+    if(root==NULL) {
+        cout <<"Tree kosong\n";
+    } else {
+        inOrderAsc(root);
+        cout<<endl;
     }
 }
 
@@ -195,6 +207,7 @@ int main() {
                 cin >> data;
                 insert(root, data);
                 cout << "Data " << data << " berhasil dimasukkan.\n";
+                displaytree(root);
                 break;
             case 2:
                 cout << "Masukkan data yang ingin dicari: ";
@@ -208,6 +221,7 @@ int main() {
                 cout << "Masukkan data yang ingin dihapus: ";
                 cin >> data;
                 deleteNode(root, data);
+                displaytree(root);
                 break;
             case 4:
                 traversalMenu(root);
